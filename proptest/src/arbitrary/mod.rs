@@ -40,6 +40,9 @@ mod _std;
 
 pub use self::traits::*;
 
+#[cfg(feature = "proptest-derive")]
+pub use proptest_derive::Arbitrary;
+
 //==============================================================================
 // SMapped + Mapped aliases to make documentation clearer.
 //==============================================================================

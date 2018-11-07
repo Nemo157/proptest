@@ -1693,6 +1693,10 @@ extern crate byteorder;
 #[macro_use]
 extern crate frunk_core;
 
+#[cfg(feature = "proptest-derive")]
+#[macro_use]
+extern crate proptest_derive;
+
 #[cfg(feature = "frunk")]
 #[macro_use]
 mod product_frunk;
